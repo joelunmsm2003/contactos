@@ -1,0 +1,35 @@
+Reporte de POS 
+
+Asesor Responsable;Cliente;Ramo;Compania;Producto;Poliza;Fecha Vigencia;Modalidad;Estatus;Fecha Contacto;Observacion
+Alvaro_Hernández;o;Salud;Bupa;Advantage;13-193957;2013-12-01 00:00:00+00:00;Anual;ACTIVA;2013-12-01 00:00:00+00:00;
+Alvaro_Hernández;o;Salud;Bupa;Essential;17-646212;2017-12-15 00:00:00+00:00;Anual;ACTIVA;2017-12-15 00:00:00+00:00;
+Alvaro_Hernández;o;Salud;Bupa;Essential;17-472698;2017-12-15 00:00:00+00:00;Anual;ACTIVA;2017-12-15 00:00:00+00:00;
+Alvaro_Hernández;o;Investments;IT;Evolution;T25A051070;2015-06-12 00:00:00+00:00;Trimestral;LAPSADA;2015-06-12 00:00:00+00:00;
+Alvaro_Hernández;o;Investments;IT;Evolution;T25A050759;2014-12-12 00:00:00+00:00;Mensual;EN GRACIA;2014-12-12 00:00:00+00:00;
+Alvaro_Hernández;o;Vida;PAIIC;Flexilife V;4665-271;2015-12-23 00:00:00+00:00;Anual;LAPSADA;2015-12-23 00:00:00+00:00;
+Alvaro_Hernández;o;Vida;PAIIC;Flexilife V;4665-267;2015-12-23 00:00:00+00:00;Anual;LAPSADA;2015-12-23 00:00:00+00:00;
+Alvaro_Hernández;o;Vida;PAIIC;Flexilife V;4665-266;2015-12-23 00:00:00+00:00;Anual;LAPSADA;2015-12-23 00:00:00+00:00;
+Alvaro_Hernández;o;Vida;PAIIC;Flexilife V;4665-268;2015-12-23 00:00:00+00:00;Anual;ACTIVA;2015-12-23 00:00:00+00:00;
+Alvaro_Hernández;o;Vida;PAIIC;Flexilife V;4665-269;2015-12-23 00:00:00+00:00;Anual;LAPSADA;2015-12-23 00:00:00+00:00;
+Alvaro_Hernández;o;Vida;NWL;Index Max;101377369;2017-12-27 00:00:00+00:00;Anual;ACTIVA;2017-12-27 00:00:00+00:00;
+Alvaro_Hernández;o;Vida;NWL;Index Select;101311336;2013-06-21 00:00:00+00:00;Anual;LAPSADA;2013-06-21 00:00:00+00:00;
+Alvaro_Hernández;o;Vida;NWL;Index Select;101187922;2008-06-30 00:00:00+00:00;Semestral;LAPSADA;2008-06-30 00:00:00+00:00;
+Alvaro_Hernández;o;Vida;NWL;Index Select;101319406;2013-12-04 00:00:00+00:00;Anual;LAPSADA;2013-12-04 00:00:00+00:00;
+Alvaro_Hernández;o;Investments;FPI;Premier;15774468;2008-06-23 00:00:00+00:00;Mensual;PAID UP;2008-06-23 00:00:00+00:00;
+Alvaro_Hernández;o;Investments;FPI;Premier;15497489;2007-12-12 00:00:00+00:00;Anual;ACTIVA;2007-12-12 00:00:00+00:00;
+Alvaro_Hernández;o;Investments;IT;S&P 500 Index;T15A006816;2016-06-22 00:00:00+00:00;Mensual;LAPSADA;2016-06-22 00:00:00+00:00;
+Alvaro_Hernández;o;Investments;IT;S&P 500 Index;T15A006472;2014-12-11 00:00:00+00:00;Mensual;ACTIVA;2014-12-11 00:00:00+00:00;
+Alvaro_Hernández;o;Salud;BMIec Salud;Sigma;SI17Q11712;2017-12-01 00:00:00+00:00;Mensual;LAPSADA;2017-12-01 00:00:00+00:00;
+Alvaro_Hernández;o;Salud;BMIec Salud;Sigma;SI17Q11865;2017-12-16 00:00:00+00:00;Mensual;LAPSADA;2017-12-16 00:00:00+00:00;
+Alvaro_Hernández;o;Salud;Bupa;Essential;13-183543;2013-06-01 00:00:00+00:00;Anual;ACTIVA;2013-06-01 00:00:00+00:00;
+Alvaro_Hernández;o;Vida;NWL;Index Select;101360278;2016-06-07 00:00:00+00:00;Anual;ACTIVA;2016-06-07 00:00:00+00:00;
+Alvaro_Hernández;o;Salud;Bupa;Essential 50;13-185235;2013-06-15 00:00:00+00:00;Anual;ACTIVA;2013-06-15 00:00:00+00:00;
+Alvaro_Hernández;o;Investments;IT;Evolution;T25A050186;2013-12-18 00:00:00+00:00;Mensual;LAPSADA;2013-12-18 00:00:00+00:00;
+Alvaro_Hernández;o;Vida;NWL;Index Select;101319528;2013-12-09 00:00:00+00:00;Anual;LAPSADA;2013-12-09 00:00:00+00:00;
+Alvaro_Hernández;o;Salud;Bupa;Secure;13-185232;2013-06-15 00:00:00+00:00;Anual;ACTIVA;2013-06-15 00:00:00+00:00;
+Alvaro_Hernández;o;Investments;GI;Vision;94038435;2013-12-31 00:00:00+00:00;Anual;PAID UP;2013-12-31 00:00:00+00:00;
+Alvaro_Hernández;o;Investments;GI;Vision;94038436;2013-12-31 00:00:00+00:00;Anual;PAID UP;2013-12-31 00:00:00+00:00;
+Alvaro_Hernández;o;Salud;BMIec Salud;Infinity;IN15Q02044;2015-12-16 00:00:00+00:00;Semestral;LAPSADA;2015-12-16 00:00:00+00:00;
+Alvaro_Hernández;o;Salud;BMIec Salud;Infinity Kids;IK17Q01382;2017-06-01 00:00:00+00:00;Mensual;LAPSADA;2017-06-01 00:00:00+00:00;
+Alvaro_Hernández;o;Salud;BMIec Salud;Sigma;SI17Q09647;2017-06-16 00:00:00+00:00;Mensual;ACTIVA;2017-06-16 00:00:00+00:00;
+Alvaro_Hernández;o;Ramos Generales;Liberty;Vehículos;557023;2017-06-26 00:00:00+00:00;Anual;ACTIVA;2017-06-26 00:00:00+00:00;

@@ -1,0 +1,54 @@
+
+
+
+<ion-content padding >
+
+
+<ion-icon (click)='closeModal()'  style='font-size: 32px;
+    float: right;' name="close"></ion-icon>
+
+
+
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <img class='animated bounceIn' style='border-radius:50%;' src="{{host}}{{socia_detalle.socia__photo}}">
+
+    </ion-col>
+    <ion-col style='padding-top: 40px;
+'>
+      
+		<h2>{{socia_detalle.socia__nombre}}</h2>
+
+
+		<h6>{{socia_detalle.socia__descripcion_titulo}}</h6>
+
+    </ion-col>
+  </ion-row>
+
+</ion-grid>
+
+
+
+<h6>{{socia_detalle.socia__descripcion_socia}}</h6>
+
+<h6>Tiempo experiencia: {{socia_detalle.socia__texperiencia}}</h6>
+
+
+<!-- 
+
+<h6>O tienes la opcion de escoger una de las socias</h6>
+
+<ion-grid>
+  <ion-row>
+    <ion-col  (click)= 'escogersocia(s)' col-4 *ngFor = 'let s of _socias' >
+      <img class='animated flipInY' style='border-radius:50%;' src='{{host}}{{s.socia__photo}}'>
+      <h5>{{s.socia__nombre}}</h5>
+    </ion-col>
+
+  </ion-row>
+ 
+ </ion-grid> -->
+
+
+</ion-content>
