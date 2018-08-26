@@ -7,6 +7,7 @@ import { PortadaProvider } from '../../providers/portada/portada';
 import { Storage } from '@ionic/storage';
 
 import { VentaPage } from '../venta/venta';
+import { SearchPage } from '../search/search';
 import { PerfilProvider } from '../../providers/perfil/perfil';
 import { UbicacionPage } from '../../pages/ubicacion/ubicacion';
 import { PerfilPage } from '../perfil/perfil';
@@ -236,8 +237,15 @@ constructor(public server:ServerProvider,public appCtrl: App,public toastCtrl: T
         this.navCtrl.pop();
     }
 
+    search(data){
+
+      this.navCtrl.push(SearchPage, {data:data})
+    }
+
 
     buscador(data){
+
+
 
       console.log(data)
 

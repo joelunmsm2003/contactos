@@ -102,8 +102,11 @@
 
  <div>
    
-   <ion-searchbar [(ngModel)]="searchTerm"  (ionInput)="buscador(searchTerm)"
+   <ion-searchbar [(ngModel)]="searchTerm"  (click)='search(subcategoria)'
+
  ></ion-searchbar>
+
+
   <ion-list>
     <ion-item *ngFor = 'let c of subcategoria' (click)='detalleModal(c)'>
     <ion-avatar item-start>

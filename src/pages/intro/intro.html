@@ -110,7 +110,7 @@
 
  <div>
    
-   <ion-searchbar [(ngModel)]="searchTerm"  (ionInput)="buscador(searchTerm)"
+   <ion-searchbar [(ngModel)]="searchTerm" (click)='search(subcategorias)'
  ></ion-searchbar>
   <ion-list>
     <ion-item *ngFor = 'let c of _subcategorias'>

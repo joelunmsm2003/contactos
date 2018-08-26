@@ -8,6 +8,7 @@ import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { ReservaPage } from '../reserva/reserva';
 import { CarritoPage } from '../carrito/carrito';
 import { HomePage } from '../home/home';
+import { SearchPage } from '../search/search';
 import { UbicacionPage } from '../ubicacion/ubicacion';
 import { DetalleproductoPage } from '../detalleproducto/detalleproducto';
 import { IntroPage } from '../intro/intro';
@@ -289,8 +290,7 @@ private todo : FormGroup;
 
       });
 
-  		
-
+ 
 
 
 
@@ -334,6 +334,13 @@ private todo : FormGroup;
 
   
   }
+
+
+    search(data){
+
+      this.navCtrl.push(SearchPage, {data:data})
+    }
+
 
   ionViewWillEnter(){
 

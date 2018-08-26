@@ -43,6 +43,8 @@ import { RegistrofinalPage } from '../pages/registrofinal/registrofinal';
 import { RegistroprincipalPage } from '../pages/registroprincipal/registroprincipal';
 import { LoginprincipalPage } from '../pages/loginprincipal/loginprincipal';
 import { DetalleproductoPage } from '../pages/detalleproducto/detalleproducto';
+import { SearchPage } from '../pages/search/search';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -145,6 +147,7 @@ export function getAuthHttp(http) {
     RegistroprincipalPage,
     RegistrofinalPage,
     SociasPage,
+    SearchPage,
     AlertaPage,
     FinalizaservicioPage,
     TabsPage,
@@ -203,7 +206,7 @@ export function getAuthHttp(http) {
     TabsPage,
     MenPage,
     PerfilPage,
-
+    SearchPage,
     HistorialsociaPage,
     CompartirPage,
     AyudaPage,
