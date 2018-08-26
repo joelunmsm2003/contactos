@@ -11,28 +11,56 @@
 
 <ion-grid>
   <ion-row>
-    <ion-col>
+    <ion-col col-12 style='padding: 60px;
+    padding-top: 0px;
+    padding-bottom: 0px;'>
       <img class='animated bounceIn' style='border-radius:50%;' src="{{host}}{{socia_detalle.socia__photo}}">
 
     </ion-col>
-    <ion-col style='padding-top: 40px;
-'>
+    <ion-col col-12>
+
+          <span *ngFor="let element of socia_detalle.estrellas">
+
+       <ion-icon *ngIf='element=="*"' color='secondary' style='font-size:30px;' name="star"></ion-icon>
+       <ion-icon *ngIf='element=="-"' color='secondary' style='font-size:30px;' name="star-outline"></ion-icon>
+
+
+      </span>
       
-		<h2>{{socia_detalle.socia__nombre}}</h2>
+		<h1>{{socia_detalle.socia__nombre}}</h1>
 
 
 		<h6>{{socia_detalle.socia__descripcion_titulo}}</h6>
+
+<p> {{socia_detalle.socia__texperiencia}} años de experiencia</p>
+
+<p> {{socia_detalle.socia__distrito__nombre}} </p>
+
 
     </ion-col>
   </ion-row>
 
 </ion-grid>
 
+<div >
+
+<h1>Descripcion</h1>
+<p>{{socia_detalle.socia__descripcion_socia}}</p>
+
+<h1>Comentarios</h1>
+  <ion-list>
+    <ion-item *ngFor = 'let c of socia_detalle.comentario'>
+    <ion-avatar item-start>
+      <img src="https://dzftds8z9s83c.cloudfront.net/profiles/avatars/production/1123547/medium/456614957034958ca7f3eb3e495bed6e1a4c3bce642bbc.jpeg">
+    </ion-avatar>
+    <h2>{{c.cliente__nombre}}</h2>
+<!--      <h3>S/. {{c.precio}}</h3> -->
+     <p>{{c.comentario}}</p>
+  </ion-item>
+  </ion-list>
 
 
-<h6>{{socia_detalle.socia__descripcion_socia}}</h6>
-
-<h6>Tiempo experiencia: {{socia_detalle.socia__texperiencia}}</h6>
+</div>
 
 
 <!-- 

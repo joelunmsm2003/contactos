@@ -24,12 +24,14 @@ import { NotificacionPage } from '../notificacion/notificacion';
 
 import { Slides } from 'ionic-angular';
 import { ServerProvider } from '../../providers/server/server';
+//import { FilterPipe} from '../../pipes/filter/filter';
+
 
 @IonicPage()
 @Component({
   selector: 'page-intro',
   templateUrl: 'intro.html',
-  providers: [CategoriasProvider,PortadaProvider,ServerProvider]
+  providers: [CategoriasProvider,PortadaProvider,ServerProvider],
 })
 
 
@@ -108,6 +110,13 @@ ubicacion:any;
 referencia:any;
 pedido:any;
 book:any;
+subcategorias:any;
+_subcategorias:any;
+searchTerm: string = '';
+items: any;
+
+private categoriaList: Categoria[];
+
 
 constructor(public server:ServerProvider,public appCtrl: App,public toastCtrl: ToastController,private _photo: PortadaProvider,private alertCtrl: AlertController,private http: Http,public zone: NgZone,public platform: Platform,public modalCtrl: ModalController,private socialSharing: SocialSharing,private storage: Storage,private _perfil: PerfilProvider,private _categoria: CategoriasProvider,public navCtrl: NavController, public navParams: NavParams) {
 
@@ -116,8 +125,6 @@ constructor(public server:ServerProvider,public appCtrl: App,public toastCtrl: T
     //this.primerencuentro()
 
     this.anuncioModal()
-
-
 
 
     console.log('server',this.server.getMyGlobalVar())
@@ -149,6 +156,25 @@ constructor(public server:ServerProvider,public appCtrl: App,public toastCtrl: T
 
     this._categoria.getcategorias(1)
             .subscribe(data => this.categoria = data);
+
+
+
+    this._categoria._getsubcategorias()
+            .subscribe(data =>{
+
+              this.subcategorias = data
+
+              console.log('data',data)
+
+
+              let storageId = 18;
+
+            this.categoriaList = this.subcategorias.filter((book: Categoria) => book.id === storageId);
+
+            console.log('_getsubcategorias',this.categoriaList);
+                    
+
+            });
 
 
     this._photo.getfotosdeportada(1)
@@ -210,6 +236,30 @@ constructor(public server:ServerProvider,public appCtrl: App,public toastCtrl: T
         this.navCtrl.pop();
     }
 
+
+    buscador(data){
+
+      console.log(data)
+
+      this.categoriaList = this.subcategorias.filter((book: Categoria) => {
+
+        
+      return book.nombre.toLowerCase().indexOf(
+     data.toLowerCase()) > -1;   
+
+
+
+
+});
+
+
+
+
+
+     this._subcategorias = this.categoriaList
+
+
+    }
 
 
 

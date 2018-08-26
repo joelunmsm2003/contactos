@@ -72,8 +72,9 @@ import { Device } from '@ionic-native/device';
 import { ServerProvider } from '../providers/server/server';
 
 import { Http, RequestOptions, HttpModule } from '@angular/http';
+import { DataProvider } from '../providers/data/data';
 
-
+//import { FilterPipe} from '../pipes/filter/filter';
 
 
 
@@ -235,7 +236,8 @@ export function getAuthHttp(http) {
     PerfilProvider,
     ServicioProvider,
     NotificacionProvider,
-    ServerProvider
+    ServerProvider,
+
   ]
 })
 export class AppModule {}

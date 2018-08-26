@@ -1,41 +1,59 @@
-<!--
-  Generated template for the DetalleproductoPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-
-
-<!-- 
-<img src="{{host}}{{producto.photo}}" style='opacity: 0.3;'> -->
-<!-- 
-<ion-header>
+<ion-header >
     <ion-navbar color='dark'>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
 
 
-      <ion-title>Donde y cuando </ion-title>
+      <ion-title>{{producto.categoria__nombre}} </ion-title>
 
-      
-                     '>{{book}}</ion-badge> 
+
+         <ion-badge (click)="carritoModal()" *ngIf='book>0' style='color: #232322;
+                            background-color: #aadeda;
+                            position: absolute;
+                            font-size: 8px;
+                            right: 5px;
+                            top: 25px;
+                            padding: 4px 6px;
+                            z-index:2000;
+                            ' >{{book}}</ion-badge> 
                             
-     
-      
+
+         <ion-buttons end>
+
+
+
+      <button end ion-button (click)="carritoModal()">
+        
+
+
+        <ion-icon style='font-size: 2.2em;' name="cart"></ion-icon>
+      </button>
+    </ion-buttons> 
+
     
 
         
 
 
     </ion-navbar>
+
+ 
   </ion-header>
- -->
 
 
 <ion-content  >
 
+    <img src="{{host}}{{producto.photo}}">
 
+    <div class='titulo animated slideInLeft'>
+
+<span >{{producto.nombre}}</span>
+
+
+  </div>
+
+<!-- 
 <div padding style='    margin-bottom: -16px;'>
 <ion-icon (click)='closeModal()'  style='font-size: 32px;
     float: right;' name="close"></ion-icon>
@@ -66,9 +84,41 @@
 </ion-item>
 
 
-</div>
+</div> -->
+
+<ion-list>
+    <ion-item *ngFor = 'let s of producto.socias' (click)= 'escogersocia(s)' >
+    <ion-avatar item-start>
+      <img src='{{host}}{{s.socia__photo}}'>
+    </ion-avatar>
+    <h2 style='font-weight: bold;
+    color: #feab2c;'>{{s.socia__nombre}}</h2>
+      <h3>{{s.socia__descripcion_titulo}}</h3> 
+     <p style='
+    color: #feab2c;' *ngIf='s.socia__texperiencia'>{{s.socia__texperiencia}} de experiencia</p>
+    <p>{{s.socia__distrito__nombre}}</p>
+
+    <ion-avatar item-end style='text-align: center;'>
+
+      <span *ngFor="let element of s.estrellas">
+
+       <ion-icon *ngIf='element=="*"' color='secondary' name="star"></ion-icon>
+       <ion-icon *ngIf='element=="-"' color='secondary' name="star-outline"></ion-icon>
 
 
+      </span>
+
+      <h6 *ngIf='s.comentario.length>0' style='color:#feab2c'>{{s.comentario.length}} Comentario</h6>
+      <p *ngIf='s.comentario.length>0' >Ver Todos</p>
+
+    </ion-avatar>
+
+
+  </ion-item>
+  </ion-list>
+
+
+<!-- 
  <ion-grid class='socia'>
   <ion-row>
     <ion-col>
@@ -92,10 +142,10 @@
 <h6>Tiempo experiencia: {{socia_detalle.socia__texperiencia}}</h6>
 
 
-</ion-grid>
+</ion-grid> -->
 
 
-<div padding>
+<!-- <div padding>
 <ion-grid>
 
 
@@ -118,19 +168,8 @@
 </div>
 
 
-
+ -->
 
 
 </ion-content>
 
-<ion-footer>
-
-<ion-toolbar>
-
-<button ion-button full round color='dark' (click)='asignar(producto,numero)' class="fadeIn"> Lo quiero</button>
-
-
-</ion-toolbar>
-
-
-</ion-footer>

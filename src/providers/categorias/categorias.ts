@@ -44,6 +44,13 @@ export class CategoriasProvider {
   
    }
 
+  _getsubcategorias(): Observable<Subcategoria[]> {
+      return this._http.get(this.server.getMyGlobalVar()+'_subcategorias/')
+      .map((response: Response) => <Subcategoria[]> response.json())
+  
+   }
+
+
    filterItems(data,searchTerm){
  
         return data.filter((item) => {

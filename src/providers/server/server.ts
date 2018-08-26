@@ -14,7 +14,7 @@ export class ServerProvider {
   
   constructor() {
 
-    this.myGlobalVar = "http://estokealo.com:8000/";
+    this.myGlobalVar = "http://138.68.230.137:8000/";
     //this.myGlobalVar = "https://mylookxpressapp.com:2500/";
   
   }

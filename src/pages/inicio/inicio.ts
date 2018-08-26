@@ -128,7 +128,7 @@ export class InicioPage {
     this.pages = [
 
       { title: 'Inicio', component: HomePage },
-      { title: 'Ingresar', component: LoginprincipalPage },
+      { title: 'Ingres00ar', component: LoginprincipalPage },
       { title: 'Compartir', component: CompartirPage },
       { title: 'Mi Perfil', component: PerfilPage },
       { title: 'Mis Reservas', component: HistorialPage }

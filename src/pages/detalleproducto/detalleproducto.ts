@@ -24,6 +24,7 @@ export class DetalleproductoPage {
   ahora:any;
   socia_detalle:any;
   s:any;
+  array:any;
 
 
 
@@ -34,6 +35,10 @@ export class DetalleproductoPage {
 
      this.host=this.server.getMyGlobalVar()
 
+
+      this.array = [1,2,3,4,5];
+
+
      console.log('server..',this.host)
 
      console.log('navParams', navParams.get('producto'));
@@ -41,6 +46,9 @@ export class DetalleproductoPage {
       this.numero=1
 
      this.producto=navParams.get('producto')
+
+
+
 
 
      console.log('ennnnn',this.producto)
@@ -79,33 +87,50 @@ export class DetalleproductoPage {
 
 
 
+generaestrellas(data){
+
+this.array=[]
+
+for (var _i = 0; _i < data; _i++) {
+
+    this.array.push('*')
+
+}
+
+
+
+}
+
 escogersocia(data){
 
   console.log(data)
 
 
-  this.socia_detalle = data
+  //this.socia_detalle = data
 
  
 
-  for (this.s in this.producto.socias){
+  // for (this.s in this.producto.socias){
 
-    console.log('nsnnss',this.producto.socias[this.s])
+  //   console.log('nsnnss',this.producto.socias[this.s])
 
-    this.producto.socias[this.s].escogido=false
-  }
-
-
-   data.escogido=true
+  //   this.producto.socias[this.s].escogido=false
+  // }
 
 
-   this.producto.escogido=data
+  //  data.escogido=true
+
+
+  //  this.producto.escogido=data
 
 
   // console.log('producto',this.producto)
 
-  //  let profileModal = this.modalCtrl.create(SociasPage, {_socia_detalle:data });
-  //  profileModal.present();
+   let profileModal = this.modalCtrl.create(SociasPage, {_socia_detalle:data });
+   profileModal.present();
+
+
+
 
   
 }

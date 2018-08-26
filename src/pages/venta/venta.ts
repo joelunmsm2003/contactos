@@ -147,7 +147,7 @@ private todo : FormGroup;
 
 
 
-            this.toastcategoria(this.cate.nombre)
+           
 
 
             this._categoria.getsubcategorias(this.cate.id,this.distrito)
@@ -465,21 +465,28 @@ openMenu() {
 
   console.log('djdjdj',data)
 
-//this.navCtrl.push(DetalleproductoPage, {producto:data})
+
+  //this.navCtrl.push(DetalleproductoPage, {producto:data})
+  
+   this.navCtrl.push(DetalleproductoPage, {
+      producto: data,
+    })
 
 
-   let profileModal = this.modalCtrl.create(DetalleproductoPage, { producto:data});
-   profileModal.onDidDismiss(data => {
+
+
+   // let profileModal = this.modalCtrl.create(DetalleproductoPage, { producto:data});
+   // profileModal.onDidDismiss(data => {
      
 
 
-        this.agregacarrito(data.producto)
+   //      this.agregacarrito(data.producto)
 
       
 
 
-   });
-   profileModal.present();
+   // });
+   // profileModal.present();
 
 
 
@@ -572,7 +579,7 @@ console.log('traesubcategorias..........',data.id)
 
 this.cate=data
 
-this.toastcategoria(data.nombre)
+//this.toastcategoria(data.nombre)
 
     this._categoria.getsubcategorias(data.id,this.distrito)
     .subscribe(data => this.subcategoria = data);

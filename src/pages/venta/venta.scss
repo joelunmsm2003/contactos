@@ -1,5 +1,20 @@
 page-venta {
 
+    .titulo{
+
+    position: absolute;
+    top: 20px;
+    /* text-align: center; */
+    font-family: "Nunito";
+    color: #fff;
+    background: #feab2c;
+    font-size: 36px;
+    padding: 8px;
+    border-radius: 45px;
+    opacity: 0.8;
+    right: 21px;
+    }
+
     .content-md {
     color: #000;
     background-color: #fff;

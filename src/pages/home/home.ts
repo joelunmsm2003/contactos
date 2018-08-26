@@ -133,6 +133,7 @@ export class HomePage {
 
       { title: 'Inicio', component: HomePage },
       { title: 'Mi Perfil', component: PerfilPage },
+      { title: 'Publica tu anuncio', component: RegistroprincipalPage },
       { title: 'Gana 5 soles', component: CompartirPage },
       { title: 'Mis Reservas', component: HistorialPage }
 
@@ -144,7 +145,7 @@ export class HomePage {
     this.pages = [
 
       { title: 'Inicio', component: HomePage },
-      { title: 'Ingresar', component: LoginprincipalPage },
+      { title: 'Ingrexxxsar', component: LoginprincipalPage },
       { title: 'Compartir', component: CompartirPage },
       { title: 'Mi Perfil', component: PerfilPage },
       { title: 'Mis Reservas', component: HistorialPage }
@@ -207,7 +208,7 @@ export class HomePage {
 
                          
                            console.log('Sin sexo...')
-                           this.sacasexo()
+                           //this.sacasexo()
                                 
 
                        }

@@ -35,13 +35,14 @@ $app-direction: ltr;
 
 $colors: (
   primary:    #488aff,
-  secondary:  #32db64,
+  secondary:  #fdcb6e,
   danger:     #f53d3d,
-  light:      #aadeda,
-  dark:       #222,
+  light:      #222,
+  dark:       #ffab2c,
   white:      #fff
 );
 
+$font-default:'Nunito';
 
 ion-footer{
 
@@ -50,17 +51,7 @@ ion-footer{
             background: none !important;
         }
 }
-    .categoria{
-
-         position: absolute;
-    right: 20px;
-    margin-top: -81px;
-    font-family: 'Comfortaa';
-    font-size: 25px;
-    color: #222;
-    text-transform: uppercase;
-    }
-
+    
     .categoriaimagen{
         display: block;
         width: 100%; 
@@ -71,7 +62,7 @@ ion-footer{
 
 .toast-message{
 
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size:14px !important;
 
 }
@@ -148,7 +139,7 @@ ion-app.md [padding] {
 }
 
 .button-inner{
-    font-family: 'Comfortaa';
+    font-family: 'Nunito';
     font-size: 12px;
 }
 
@@ -166,7 +157,7 @@ flex: 1;
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Nunito', sans-serif;
         background: #f7f7f7;
 }
 
@@ -185,7 +176,7 @@ flex: 1;
 
 ion-title{
 
-	font-family: 'Comfortaa', sans-serif;
+	font-family: 'Nunito', sans-serif;
 
 
 }
@@ -193,7 +184,7 @@ ion-title{
 .input-wrapper {
 
 
-    font-family: "Comfortaa" !important;
+    font-family: "Nunito" !important;
 
 
 }
@@ -207,12 +198,12 @@ ion-title{
 
 .alert-md .alert-title {
     font-size: 14px !important;
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 .alert-md .alert-sub-title {
     font-size: 14px !important;
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Nunito', sans-serif;
     padding-top: 13px !important;
 }
 
@@ -233,7 +224,7 @@ ion-title{
     padding: 2px 16px !important;
     font-size: 1.4rem;
     line-height: 1.5;
-    font-family: 'Comfortaa', sans-serif !important;
+    font-family: 'Nunito', sans-serif !important;
 }
 
 
