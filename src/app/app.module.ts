@@ -1,6 +1,4 @@
 
-import * as Raven from 'raven-js';
-
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule,ErrorHandler } from '@angular/core';
@@ -82,15 +80,7 @@ import { DataProvider } from '../providers/data/data';
 
 
 
-Raven
-  .config('https://bd20e17ba38a4b2c9dc8333a170e1ad2@sentry.io/1230751')
-  .install();
 
-export class RavenErrorHandler implements ErrorHandler {
-  handleError(err:any) : void {
-    Raven.captureException(err);
-  }
-}
 
 
 //import { SocialLoginModule, AuthServiceConfig } from "angular4-social-login";

@@ -44,7 +44,6 @@
     "cordova-plugin-device": "^1.1.4",
     "cordova-plugin-facebook4": "~1.9.1",
     "cordova-plugin-geolocation": "^4.0.1",
-    "cordova-plugin-googlemaps": "^2.1.1",
     "cordova-plugin-googlemaps-sdk": "git+https://github.com/mapsplugin/cordova-plugin-googlemaps-sdk.git",
     "cordova-plugin-ionic-webview": "^1.1.16",
     "cordova-plugin-splashscreen": "^4.0.3",
@@ -72,12 +71,6 @@
   "description": "An Ionic project",
   "cordova": {
     "plugins": {
-      "cordova-plugin-googlemaps": {
-        "API_KEY_FOR_IOS": "AIzaSyClmE8wtji8TfOH757o8VCspFHUzhMrjAo",
-        "API_KEY_FOR_ANDROID": "AIzaSyCopEqGky81dhV56krJ1dqjkqFPKKOpOrI",
-        "LOCATION_WHEN_IN_USE_DESCRIPTION": "Requerimos tu ubicación para poder atenderte, y brindarte un mejor servicip",
-        "LOCATION_ALWAYS_USAGE_DESCRIPTION": "Requerimos tu ubicación para poder atenderte, y brindarte un mejor servicio"
-      },
       "ionic-plugin-keyboard": {},
       "cordova-plugin-whitelist": {},
       "cordova-plugin-device": {},

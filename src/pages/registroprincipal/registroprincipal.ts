@@ -12,17 +12,10 @@ import { Storage } from '@ionic/storage';
 import { Facebook, FacebookLoginResponse } from '@ionic-native/facebook';
 import { UbicacionPage } from '../../pages/ubicacion/ubicacion';
 import { ServerProvider } from '../../providers/server/server';
-//import { AuthService } from "angular4-social-login";
-// import { FacebookLoginProvider, GoogleLoginProvider } from "angular4-social-login";
-// import { SocialUser } from "angular4-social-login";
-// import { HomePage } from '../../pages/home/home';
 
-/**
- * Generated class for the RegistroPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { Categoria } from '../../providers/categorias/categoria';
+import { Subcategoria } from '../../providers/categorias/subcategoria';
+import { CategoriasProvider } from '../../providers/categorias/categorias';
 
 @IonicPage()
 @Component({
@@ -44,6 +37,9 @@ export class RegistroprincipalPage {
   activa:boolean=false;
   codigo:any;
   loger:any=1;
+  categoria:any;
+
+
 
   //private userface: SocialUser;
 
@@ -54,14 +50,29 @@ export class RegistroprincipalPage {
 
 
 
-  constructor(private nav: NavController,public modalCtrl: ModalController,public server:ServerProvider,public toastCtrl: ToastController,private fb: Facebook,public storage: Storage,private _perfil: PerfilProvider,public alertCtrl: AlertController,private view:ViewController,private formBuilder: FormBuilder,public appCtrl: App,private http: Http,public navCtrl: NavController, public navParams: NavParams) {
-
-    //Telefono
+  constructor(private _categoria: CategoriasProvider,private nav: NavController,public modalCtrl: ModalController,public server:ServerProvider,public toastCtrl: ToastController,private fb: Facebook,public storage: Storage,private _perfil: PerfilProvider,public alertCtrl: AlertController,private view:ViewController,private formBuilder: FormBuilder,public appCtrl: App,private http: Http,public navCtrl: NavController, public navParams: NavParams) {
 
 
-    //this.keyboard.show();
 
-    //this.activa=true;
+       // this._categoria.getsubcategorias(this.cate.id,this.distrito)
+       //        .subscribe(data => {
+
+       //          //this.mano = data
+       //          this.traesubcategorias(this.cate)
+
+       //        });
+
+
+
+        this._categoria._getsubcategorias()
+      .subscribe(data => {
+
+
+        console.log('getcategorias',data)
+        this.categorias = data
+
+
+      });
 
 
 
@@ -97,11 +108,15 @@ export class RegistroprincipalPage {
 
 
      this.todo = this.formBuilder.group({
-      email: ['', Validators.required],
-      nombre: [''],
+      titulo:[''],
+      descripcion:[''],
+      categoria:[''],
+      subcategoria:[''],
+      distrito:[''],
+      costo:[''],
       telefono:[''],
-     
-
+      whatsapp:[''],
+      email:[''],
     });
 
       this.loginPage=LoginPage

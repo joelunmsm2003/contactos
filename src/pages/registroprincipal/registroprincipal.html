@@ -5,16 +5,15 @@
   Ionic pages and navigation.
 -->
 
- <ion-header>
+<ion-header>
+    <ion-toolbar color='dark'>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+      <ion-title>Publica tu anuncio</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
-  <ion-navbar color='dark'>
-    <ion-title> Ingresar </ion-title>
-
-    
-
-  </ion-navbar>
-
-</ion-header>
 
 
 
@@ -32,58 +31,76 @@
 <ion-list inset  >
 
 
-   <!--Facebook Login-->
-
-
-<!--   <div *ngIf="isLoggedIn; else facebookLogin">
- 
-    <p>
-      <button ion-button full icon-right (click)="logout()">
-        Salir
-      </button>
-    </p>
-  </div>
-  <ng-template #facebookLogin>
-    <button ion-button full icon-right (click)="login()">
-      Ingresar con
-      <ion-icon name="logo-facebook"></ion-icon>
-    </button>
-  </ng-template>
- -->
- 
-
-
-
-
- 
-<!-- <label *ngIf="!telefono" color='light'>Registrate con tu celular</label>
- -->
-
-
-
-<!-- 
-<span padding style='font-family: "Varela Round";font-size:18px;'>MY LOOK XPRESS</span>
-
- -->
-
-<div style='height: 10px'></div>
-<h6 padding>Te enviaremos un SMS con el codigo de confirmación</h6>
-
 
 
   <form  (ngSubmit)="ingresa(user)" [formGroup]="todo">
  
-       <ion-list inset>
+      <ion-list inset>
 
-
-
-
-
-        <label color='dark'>Celular</label>
+      <label color='dark'>Titulo</label>
       <ion-item>
-            <ion-input formControlName="telefono" maxlength="9" name='telefono' id="loginField" type="number" required [(ngModel)] = "user.telefono"></ion-input>
+            <ion-input formControlName="titulo" maxlength="9" name='titulo' id="titulo" type="text" required [(ngModel)] = "user.titulo"></ion-input>
       </ion-item>
 
+
+      <div style='height: 10px' ></div>
+
+        <label color='dark'>Descripcion</label>
+      <ion-item>
+            <ion-input formControlName="descripcion" maxlength="9" name='descripcion' id="descripcion" type="text" required [(ngModel)] = "user.descripcion"></ion-input>
+      </ion-item>
+
+
+      <div style='height: 10px' ></div>
+
+
+      <label color='dark'>Categoria</label>
+     
+      <ion-select formControlName="categoria" name='categoria' id="categoria" [(ngModel)]="user.categoria" >
+      <ion-option *ngFor="let item of categorias" [value]="item.categoria__nombre"></ion-option>
+      </ion-select>
+
+
+      <div style='height: 10px' ></div>
+
+      <label color='dark'>Subcategoria</label>
+      <ion-item>
+            <ion-input formControlName="subcategoria" maxlength="9" name='subcategoria' id="subcategoria" type="text" required [(ngModel)] = "user.subcategoria"></ion-input>
+      </ion-item>
+
+
+      <div style='height: 10px' ></div>
+
+      <label color='dark'>Distrito</label>
+      <ion-item>
+            <ion-input formControlName="distrito" maxlength="9" name='distrito' id="distrito" type="text" required [(ngModel)] = "user.distrito"></ion-input>
+      </ion-item>
+
+
+      <div style='height: 10px' ></div>
+
+      <label color='dark'>Costo</label>
+      <ion-item>
+            <ion-input formControlName="costo" maxlength="9" name='costo' id="costo" type="text" required [(ngModel)] = "user.costo"></ion-input>
+      </ion-item>
+
+
+      <div style='height: 10px' ></div>
+
+      <label color='dark'>Telefono</label>
+      <ion-item>
+            <ion-input formControlName="telefono" maxlength="9" name='telefono' id="telefono" type="text" required [(ngModel)] = "user.telefono"></ion-input>
+      </ion-item>
+
+      <div style='height: 10px' ></div>
+
+      <label color='dark'>Whatsapp</label>
+      <ion-item>
+            <ion-input formControlName="whatsapp" maxlength="9" name='whatsapp' id="whatsapp" type="texttext" required [(ngModel)] = "user.whatsapp"></ion-input>
+      </ion-item>
+
+
+    
      
       <div style='height: 10px' ></div>
       <label *ngIf='loger==1' color='dark'>Correo Electronico</label>
@@ -94,16 +111,13 @@
       <div style='height: 10px'></div>
 
 
-      <label color='dark' *ngIf='loger==1'>Nombre</label>
-      <ion-item *ngIf='loger==1' style='border-bottom: 1px solid #dedede;'>
-            <ion-input formControlName="nombre"  name='nombre' id="loginField" type="text" required [(ngModel)] = "user.nombre"></ion-input>
-      </ion-item>
+     
 
       </ion-list>
 
 
 
-      <button *ngIf='loger==1' round ion-button type="submit" color='dark' block [disabled]="!todo.valid">Registrar</button>
+      <button  round ion-button type="submit" color='dark' block [disabled]="!todo.valid">Publicar</button>
     </form> 
 
 
