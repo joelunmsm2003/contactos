@@ -7,6 +7,7 @@ import { Http,RequestOptions, Headers } from '@angular/http';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { ReservaPage } from '../reserva/reserva';
 import { CarritoPage } from '../carrito/carrito';
+import { RegistroprincipalPage } from '../registroprincipal/registroprincipal';
 import { HomePage } from '../home/home';
 import { SearchPage } from '../search/search';
 import { UbicacionPage } from '../ubicacion/ubicacion';
@@ -798,7 +799,7 @@ this.cate=data
 
 
 
-   this.navCtrl.push(UbicacionPage, {
+   this.navCtrl.push(RegistroprincipalPage, {
       
     })
 

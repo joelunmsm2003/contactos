@@ -24,8 +24,10 @@ import { AvisoPage } from '../aviso/aviso';
 import { PerfilPage } from '../perfil/perfil';
 import { RegistroPage } from '../registro/registro';
 import { AyudaPage } from '../ayuda/ayuda';
+import { FavoritoPage } from '../favorito/favorito';
 import { AuthHttp, tokenNotExpired,JwtHelper } from 'angular2-jwt';
 import { CompartirPage } from '../compartir/compartir';
+import { ClientesPage } from '../clientes/clientes';
 import { RegistroprincipalPage } from '../registroprincipal/registroprincipal';
 import { Http,RequestOptions, Headers } from '@angular/http';
 import { ServerProvider } from '../../providers/server/server';
@@ -135,7 +137,8 @@ export class HomePage {
       { title: 'Mi Perfil', component: PerfilPage },
       { title: 'Publica tu anuncio', component: RegistroprincipalPage },
       { title: 'Gana 5 soles', component: CompartirPage },
-      { title: 'Mis Reservas', component: HistorialPage }
+      { title: 'Mis Favoritos', component: FavoritoPage },
+      { title: 'Clientes', component: ClientesPage },
 
 
 

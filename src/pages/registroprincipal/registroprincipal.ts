@@ -37,7 +37,7 @@ export class RegistroprincipalPage {
   activa:boolean=false;
   codigo:any;
   loger:any=1;
-  categoria:any;
+  categorias:any;
 
 
 
@@ -64,7 +64,7 @@ export class RegistroprincipalPage {
 
 
 
-        this._categoria._getsubcategorias()
+      this._categoria._getsubcategorias()
       .subscribe(data => {
 
 
@@ -243,6 +243,16 @@ export class RegistroprincipalPage {
 
 //       })
 // }
+
+
+  traesubcategorias(data){
+
+
+    console.log(data)
+
+
+
+  }
 
 
 

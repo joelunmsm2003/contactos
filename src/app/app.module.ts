@@ -34,6 +34,8 @@ import { AvisoPage } from '../pages/aviso/aviso';
 import { PerfilPage } from '../pages/perfil/perfil';
 import { NotificacionPage } from '../pages/notificacion/notificacion';
 import { CarritoPage } from '../pages/carrito/carrito';
+import { ClientesPage } from '../pages/clientes/clientes';
+import { FavoritoPage } from '../pages/favorito/favorito';
 import { HistorialPage } from '../pages/historial/historial';
 import { HistorialsociaPage } from '../pages/historialsocia/historialsocia';
 import { InicioPage } from '../pages/inicio/inicio';
@@ -144,8 +146,12 @@ export function getAuthHttp(http) {
     AvisoPage,
     AyudaPage,
     PagoPage,
+    FavoritoPage,
+    ClientesPage,
     InicioPage,
     CarritoPage,
+    ClientesPage,
+    FavoritoPage,
     HistorialsociaPage,
     UbicacionPage,
     RegistroPage,
@@ -196,6 +202,8 @@ export function getAuthHttp(http) {
     TabsPage,
     MenPage,
     PerfilPage,
+    ClientesPage,
+    FavoritoPage,
     SearchPage,
     HistorialsociaPage,
     CompartirPage,

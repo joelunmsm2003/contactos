@@ -22,7 +22,7 @@ import { SocialSharing } from '@ionic-native/social-sharing';
 import { AyudaPage } from '../ayuda/ayuda';
 import { LoginprincipalPage } from '../loginprincipal/loginprincipal';
 import { NotificacionPage } from '../notificacion/notificacion';
-
+import { RegistroprincipalPage } from '../registroprincipal/registroprincipal';
 import { Slides } from 'ionic-angular';
 import { ServerProvider } from '../../providers/server/server';
 //import { FilterPipe} from '../../pipes/filter/filter';
@@ -622,6 +622,18 @@ this.navCtrl.push(NotificacionPage, {
     }).catch(() => {
       console.error("shareSheetShare: failed");
     });
+  }
+
+
+  continuar(){
+
+  
+
+   this.navCtrl.push(RegistroprincipalPage, {
+      
+    })
+
+
   }
 
 

@@ -38,7 +38,7 @@
     "@ngx-translate/http-loader": "^2.0.1",
     "angular2-jwt": "^0.2.3",
     "angular4-social-login": "^1.1.1",
-    "cordova-android": "~7.0.0",
+    "cordova-android": "6.4.0",
     "cordova-clipboard": "^1.2.1",
     "cordova-ios": "4.5.4",
     "cordova-plugin-device": "^1.1.4",

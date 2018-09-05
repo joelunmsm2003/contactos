@@ -50,6 +50,12 @@ export class CategoriasProvider {
   
    }
 
+   getfavoritos(): Observable<Subcategoria[]> {
+      return this._http.get(this.server.getMyGlobalVar()+'favoritos/')
+      .map((response: Response) => <Subcategoria[]> response.json())
+  
+   }
+
 
    filterItems(data,searchTerm){
  
